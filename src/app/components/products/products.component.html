@@ -1,0 +1,28 @@
+@defer (when items) {
+
+@if (items) {
+    <div class="container">
+        <div class="row">
+@for (item of signalItems(); track $index) {
+    <app-card class=" col-6 col-md-3 col-sm-6   hola" [product]="item" ></app-card>
+}
+</div>
+</div>
+}
+}
+@loading {
+    <span>is loading ...</span>
+}
+@placeholder {
+    <app-card-place-holder></app-card-place-holder>
+}
+
+@error {
+    <span>opps something went wrong</span>
+}
+
+
+
+
+
+

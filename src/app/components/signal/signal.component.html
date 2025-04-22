@@ -1,0 +1,17 @@
+<p>{{query()}}</p>
+
+<h3>{{computedResult ()}}</h3>
+<h3>{{myObserbable$ | async }}</h3>
+
+<button (click)="onChange()" class="button">
+  change
+  <div class="hoverEffect">
+    <div></div>
+  </div>
+</button>
+<button (click)="onUpdate()" class="button">
+    Actualizar
+    <div class="hoverEffect">
+      <div></div>
+    </div>
+  </button>
